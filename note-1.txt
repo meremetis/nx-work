@@ -1,0 +1,35 @@
+https://github.com/mandarini/empty-nx-workspace-starter 
+
+npx create-nx-workspace@latest bg-hoard
+
+CLI 
+	// adds the First app
+	npx nx create-nx-workspace app-name
+
+	npx nx serve bg-hoard
+	npx nx list
+	npx nx list @nx/angular
+
+// adds the second app
+npx nx g @nx/angular:app store // 
+
+
+npx nx run-many --target=build // run many at end.
+
+
+
+
+npx nx graph // to see the graph
+
+
+// add liabrary
+nx g @nx/angular:lib ui-shared --directory=libs/store/ui-shared
+
+// adds an other component at the library
+nx g @nx/angular:component header --project=ui-shared 
+
+// to delete the previus 
+nx g @nx/workspace:remove --projecName=ui-shared
+
+//
+
