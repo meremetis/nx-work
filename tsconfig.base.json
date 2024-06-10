@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@bg-hoard/feature-game-detail": [
+        "libs/store/feature-game-detail/src/index.ts"
+      ],
+      "@bg-hoard/ui-shared": ["libs/store/ui-shared/src/index.ts"],
+      "@bg-hoard/util-formatters": ["libs/store/util-formatters/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
